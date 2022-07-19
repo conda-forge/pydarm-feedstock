@@ -1,5 +1,5 @@
 {% set name = "pydarm" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydarm-{{ version }}.tar.gz
-  sha256: 45b4f2b3f1e842210f56ecdd2f49794ea7351202a7cb7d21f9e8e352872c7c5a
+  sha256: f647f7f116533cd07d65eef66b2b0217302ae5f9835ee41e882e400b60fa57ed
 
 build:
   noarch: python
