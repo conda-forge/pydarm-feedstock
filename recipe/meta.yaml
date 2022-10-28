@@ -1,5 +1,5 @@
 {% set name = "pydarm" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydarm-{{ version }}.tar.gz
-  sha256: 3501aa74c879549530f9e3b5064701200c0c80c97d0111d8c930cd57bcf88940
+  sha256: 8994b9f2f646bcf333deb8db2cf58fcbdc068e1cb7ec3e758278ba2eeeaf4002
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ requirements:
     - requests
     - scikit-learn >=1.1.0
     - scipy
-    - ezca
+    - pyepics
 
 test:
   imports:
