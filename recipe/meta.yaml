@@ -1,5 +1,5 @@
 {% set name = "pydarm" %}
-{% set version = "0.1" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydarm-{{ version }}.tar.gz
-  sha256: ce33827e716df5d54b79ac221977c671760bd1930e73389c1bf339fdde55feeb
+  sha256: 310a513cc881d0076f3c9a8b62fb9b7d694c5ba9c980648fcdd31797480f2a95
 
 build:
   noarch: python
@@ -43,6 +43,7 @@ test:
 
 about:
   home: https://pypi.org/project/pydarm/
+  doc_url: https://calibration.docs.ligo.org/pydarm
   summary: pyDARM modeling package for LIGO detector calibration
   license: GPL-3.0-or-later
   license_file: LICENSE
