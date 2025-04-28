@@ -28,6 +28,7 @@ requirements:
     - gpstime
     - gwpy
     - h5py
+    - ligo-scald
     - matplotlib-base
     - numpy <1.25
     - pyepics
