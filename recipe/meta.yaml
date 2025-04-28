@@ -23,15 +23,20 @@ requirements:
     - corner
     - dttxml
     - emcee
+    - gitpython
+    - gpflow
+    - gpstime
     - gwpy
     - h5py
     - matplotlib-base
-    - numpy
+    - numpy <1.25
+    - pyepics
     - python >={{ python_min }}
     - requests
     - scikit-learn >=1.1.0
     - scipy
-    - pyepics
+    - tensorflow ==2.15.0
+    - tensorflow-probability ==0.23.0
 
 test:
   imports:
