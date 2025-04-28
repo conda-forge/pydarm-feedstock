@@ -1,5 +1,5 @@
 {% set name = "pydarm" %}
-{% set version = "0.1.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydarm-{{ version }}.tar.gz
-  sha256: 310a513cc881d0076f3c9a8b62fb9b7d694c5ba9c980648fcdd31797480f2a95
+  sha256: bb2e779a715503c9bd40942480c5aabee812c2b7aa21b12f0e33af34e3e9af40
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,15 +23,21 @@ requirements:
     - corner
     - dttxml
     - emcee
+    - gitpython
+    - gpflow
+    - gpstime
     - gwpy
     - h5py
+    - ligo-scald
     - matplotlib-base
-    - numpy
+    - numpy <1.25
+    - pyepics
     - python >={{ python_min }}
     - requests
     - scikit-learn >=1.1.0
     - scipy
-    - pyepics
+    - tensorflow ==2.15.0
+    - tensorflow-probability ==0.23.0
 
 test:
   imports:
